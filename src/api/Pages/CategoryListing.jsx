@@ -27,7 +27,7 @@ const CategoryListing = () => {
     );
   });
 
-  if (loading) return <p className="text-center mt-10">Loading...</p>;
+  if (loading) return <p className="text-center w-100 mt-10">Loading...</p>;
 
   return (
     <div className="flex gap-6 p-4">

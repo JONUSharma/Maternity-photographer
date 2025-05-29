@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
+
 const PhotographerProfilePage = () => {
   const { id } = useParams();
   const [photographer, setPhotographer] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/photographers/${id}`)
+    axios.get(`../../../public/Photographer.json/${id}`)
       .then(res => setPhotographer(res.data));
   }, [id]);
 

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import {} from "../../public/Photographer.json"
+
 
 export const fetchPhotographers = createAsyncThunk(
   'photographers/fetchPhotographers',
