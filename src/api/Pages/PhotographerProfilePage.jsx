@@ -10,7 +10,7 @@ const PhotographerProfilePage = () => {
   useEffect(() => {
     axios.get('/photographer.json')
       .then((res) => {
-        const found = res?.data?.photographers?.find(p => p.id === Number(id));
+        const found = res.data.photographers.find(p => p.id === Number(id));
         setPhotographer(found);
       })
       .catch(err => console.error("Error fetching profile", err));
