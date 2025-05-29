@@ -6,7 +6,7 @@ export const fetchPhotographers = createAsyncThunk(
   'photographers/fetchPhotographers',
   async () => {
     // const response = await axios.get('http://localhost:3001/photographers');
-    const response = await axios.get("/Photographer.json");
+    const response = await axios.get("/photographer.json");
     return response.data.photographers;
   }
 );
