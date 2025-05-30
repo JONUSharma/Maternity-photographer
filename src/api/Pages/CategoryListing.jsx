@@ -16,7 +16,7 @@ const CategoryListing = () => {
     dispatch(fetchPhotographers());
   }, [dispatch]);
 
-  const filteredData = data.filter((p) => {
+  const filteredData = data?.filter((p) => {
     return (
       (filters.city === '' || p.location.toLowerCase().includes(filters.city.toLowerCase())) &&
       (filters.rating === '' || p.rating >= Number(filters.rating)) &&
