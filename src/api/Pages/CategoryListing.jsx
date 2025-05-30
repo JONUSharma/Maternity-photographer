@@ -27,6 +27,8 @@ const CategoryListing = () => {
     );
   });
 
+
+
   if (loading) return <p className="text-center w-100 mt-10">Loading...</p>;
 
   return (
@@ -38,7 +40,7 @@ const CategoryListing = () => {
           {filteredData?.map((p) => (
             <PhotographerCard key={p.id} photographer={p} />
           ))}
-        </div>       
+        </div>
       </div>
     </div>
   );
