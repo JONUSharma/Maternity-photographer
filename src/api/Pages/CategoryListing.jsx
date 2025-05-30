@@ -34,11 +34,11 @@ const CategoryListing = () => {
       <FilterSidebar filters={filters} setFilters={setFilters} />
       <div className="flex-1">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-screen gap-4">
           {filteredData.map((p) => (
             <PhotographerCard key={p.id} photographer={p} />
           ))}
-        </div>
+        </div>       
       </div>
     </div>
   );

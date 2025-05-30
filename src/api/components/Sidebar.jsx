@@ -7,7 +7,7 @@ const FilterSidebar = ({ filters, setFilters }) => {
   };
 
   return (
-    <div className="p-4 border rounded shadow w-64 space-y-4">
+    <div className="p-4 border rounded-lg shadow w-64 space-y-4">
       <h2 className="text-xl font-bold">Filters</h2>
 
       <div>

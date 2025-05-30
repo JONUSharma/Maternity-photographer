@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <div className="flex items-center gap-2 mb-4">
+    <div className="flex items-center gap-2 mb-4 sticky top-0">
       <input
         type="text"
         placeholder="Search photographers..."
