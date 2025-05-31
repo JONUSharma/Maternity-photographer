@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PhotographerCard = ({ photographer }) => (
   <div className="border rounded-lg bg-gray-500 p-4 shadow-md hover:shadow-gray-500  ">
-    <img src={photographer.profilePic} alt={photographer.name} className="w-full h-48 object-cover rounded" />
+    <img src="{photographer.profilePic}" alt={photographer.name} className="w-full h-48 object-cover rounded" />
     <h2 className="text-xl font-bold mt-2">{photographer.name}</h2>
     <p>📍 {photographer.location}</p>
     <p>₹ {photographer.price}</p>

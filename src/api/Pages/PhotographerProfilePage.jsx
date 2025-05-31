@@ -28,7 +28,7 @@ const PhotographerProfilePage = () => {
       <h3 className="text-xl font-bold mt-5">Gallery</h3>
       <div className="grid grid-cols-2 gap-3 mt-2">
         {photographer?.portfolio?.map((img, i) => (
-          <img key={i} src={img} className="rounded" alt="" />
+          <img key={i} src={img}  className="rounded w-full" alt="img" />
         ))}
       </div>
       <h3 className="text-xl font-bold mt-5">Reviews</h3>

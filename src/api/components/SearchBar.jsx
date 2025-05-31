@@ -8,7 +8,7 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         placeholder="Search photographers..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="border p-2 flex-1 rounded shadow"
+        className="border p-2 flex-1 rounded shadow-sm hover:shadow-blue-100"
       />
       <button className="bg-blue-500 text-white px-4 py-2 rounded">🔍</button>
     </div>
